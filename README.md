@@ -1,0 +1,1 @@
+# EdgeBeta.AppImage
