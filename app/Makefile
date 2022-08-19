@@ -21,7 +21,7 @@ all: clean init
 	    libgtk-3-0 libwayland-cursor0
 
 
-	wget --output-document=$(PWD)/build/build.rpm https://packages.microsoft.com/yumrepos/edge/microsoft-edge-beta-100.0.1185.17-1.x86_64.rpm
+	wget --output-document=$(PWD)/build/build.rpm https://packages.microsoft.com/yumrepos/edge/microsoft-edge-beta-102.0.1245.22-1.x86_64.rpm
 	cd $(PWD)/build && rpm2cpio $(PWD)/build/build.rpm | cpio -idmv && cd ..
 
 	cp --force --recursive $(PWD)/build/usr/share/*			            $(PWD)/build/Boilerplate.AppDir/share
